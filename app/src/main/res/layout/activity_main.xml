@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@drawable/image"
+        android:scaleType="fitCenter"
+
+        />
+
+    <EditText
+        android:id="@+id/nameEditTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageId"
+        android:hint="Enter the name here...."
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+
+        />
+
+    <TextView
+        android:id="@+id/progressTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0%"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_below="@id/nameEditTextId"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/ProgressBarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/progressTextId"
+        android:layout_marginTop="10dp"
+
+        />
+
+  <Button
+
+      android:id="@+id/update_btn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Update"
+      android:textAlignment="center"
+      android:layout_below="@id/ProgressBarId"
+      android:gravity="center_horizontal"
+      android:layout_marginTop="10dp"
+      />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
